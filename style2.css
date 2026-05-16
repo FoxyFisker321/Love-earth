@@ -1,0 +1,162 @@
+   
+    	*{
+    		margin:0;
+    		padding:0;
+    		box-sizing:border-box;
+    	}
+
+        body{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+        .RockstarGames{background: #000 url(stars.png) repeat top center;
+            width:100%;
+            height:100%;
+            position: absolute;
+            z-index:-2;}
+
+            .twinkling{background:transparent url(twinkling.png) repeat top center;
+            width:100%;
+            height:100%;
+            position:absolute;
+            z-index: -1;
+            animation-name:move-stars;
+            animation-duration: 70s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        .system{
+            width:700px;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .orbita{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border:1px white solid;
+            border-radius: 100%;
+            position:absolute;
+
+
+
+        }
+
+
+ .mercury{
+  height:200px; width:200px; animation:spin; animation-duration:60s; animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+ }
+
+ .mercury.png{
+  top:50%; left:-12px; border-radius:100%;transform:translateY(-50%); position:absolute;
+ }
+     
+ .venus{
+  height:250px; width:250px; animation:spin; animation-duration:120s; animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+ }
+
+ .venus-img{
+  top:50%; left:-12px; border-radius:100%;transform:translateY(-50%); position:absolute;
+ }
+    
+        .earth{height:300px; width:300px; animation:spin; animation-duration:180s; animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .earth-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+
+              .mars{height:350px; width:350px; animation:spin; animation-duration:240s; animation-iteration-count: infinite;animation-timing-function: linear;}
+
+            .mars-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+              .jupiter{height:400px; width:400px; animation:spin; animation-duration:300s; animation-iteration-count: infinite;animation-timing-function: linear;}
+
+              .jupiter-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+             .saturn{height:450px; width:450px; animation:spin; animation-duration:360s; animation-iteration-count: infinite;animation-timing-function: linear;}
+
+               .saturn-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+             .uranus{height:500px; width:500px; animation:spin; animation-duration:420s; animation-iteration-count: infinite;}
+  
+  .uranus-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+ 
+  .neptune{height:550px; width:550px; animation:spin; animation-duration:480s; animation-iteration-count: infinite;}
+   .neptune-png{top:50%; left:-12px; border-radius:100;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+              .captured_asteroid{height:650px; width:650px; animation:spin; animation-duration:90s; animation-iteration-count: infinite;}
+   .captured_asteroid-png{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;} 
+
+           
+
+           .
+
+           .
+
+
+.IIS{height:320px; width:320px; animation:spin; animation-duration:s; animation-iteration-count: infinite;}
+}
+.IIS-img{top:50%; left:-12px; border-radius:100%;
+            transform:translateY(-50%);
+             position: absolute;}
+
+.p1{
+  color:lightblue;
+  left:150px;
+  font-size:25px;
+  margin-left:155px;
+}
+
+.no-flex{
+  display:inline;
+}
+     @keyframes spin{
+        from{
+            transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+     }
+        @keyframes  move-stars {
+           0%{
+            background-position: 0 0;
+
+           }
+
+           100%{
+            background-position: -10000px 5000px;=
+           }
+
+        }
+
+        h1{
+          color:lightblue;
+          margin-left:200px;
+        }
